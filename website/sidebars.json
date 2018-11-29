@@ -1,0 +1,8 @@
+{
+  "docs": {
+    "API": ["api"],
+    "findWeather": ["lib-find-weather"],
+    "calcTemp": ["lib-calc-temp"],
+    "weather-icon": ["lib-weather-icon"]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "weather-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "docs-api": "swagger-jsdoc -d swaggerDef.js && swagger-markdown -i swagger.json -o docs/api.md",
+    "docs-lib": "jsdoc2md lib/calc-temp.js > docs/lib-calc-temp.md && jsdoc2md lib/weather-icon.js > docs/lib-weather-icon.md && jsdoc2md lib/find-weather.js > docs/lib-find-weather.md",
+    "docs": "npm run docs-api && npm run docs-lib && cd website && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "jsdoc-to-markdown": "^4.0.1",
+    "supertest": "^3.3.0",
+    "swagger-jsdoc": "^3.2.5",
+    "swagger-markdown": "^1.1.5",
+    "tape": "^4.9.1",
+    "yup": "^0.26.6"
+  }
+}
