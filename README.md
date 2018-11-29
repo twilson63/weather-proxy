@@ -11,6 +11,17 @@ const result = await fetch(`https://weather.twilson63.xyz?q=Atlanta`).then(r =>
 console.log(result)
 ```
 
+Response
+
+```json
+{
+  "location": "Atlanta",
+  "forecast": "Showers",
+  "temp": 56,
+  "icon": "https://www.metaweather.com/static/img/weather/png/64/s.png"
+}
+```
+
 ## Docs
 
 [See Docs](docs)
